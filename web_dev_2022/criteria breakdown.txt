@@ -1,0 +1,21 @@
+Company Name
+Logo
+
+Page for what company does
+Image + short bio of company president
+
+Contact page for visitors (communication info + via a form)
+
+signup for monthly newsletter using Name, Phone Number, Email (needs to be collected (and stored?), but not processed)
+
+Additional page for company product/service (with image and description for each) (at least 10, and be easily expandable)
+
+
+---
+
+responsive design
+at least one embedded audio + one embedded video
+click images should show larger version of thumbnails
+at least one modal
+flexible page layout
+external css

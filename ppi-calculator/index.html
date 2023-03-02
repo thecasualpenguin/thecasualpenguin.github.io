@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- <link rel="stylesheet" href="main.css" async> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="script.js" defer async></script>
+
+		<title>Is it Retina?</title>
+	</head>
+	<body>
+		<section id="content">
+			<form action="#" id="customDevice" method="post" name="customDevice">
+				<fieldset>
+					<legend>Custom Display</legend>
+					<div>
+						<label
+							><b>Horizontal</b> Pixels:
+							<input id="width" type="text" value="1024" />
+						</label>
+					</div>
+					<div>
+						<label
+							><b>Vertical</b> Pixels:
+							<input id="height" type="text" value="768"
+						/></label>
+					</div>
+					<div>
+						<label
+							><b>Diagonal</b> Size (inches):
+							<input id="diagonal" type="text" value="17"
+						/></label>
+					</div>
+				</fieldset>
+
+				<article>
+					<h1>What is a Retina display?</h1>
+
+					<p>
+						Retina is Apple's trademark for a display so sharp that the human
+						eye is unable to distinguish between pixels at a typical viewing
+						distance. As Steve Jobs said: "It turns out there’s a magic number
+						right around 300 pixels per inch, that when you hold something
+						around to 10 to 12 inches away from your eyes, is the limit of the
+						human retina to differentiate the pixels." Given a large enough
+						viewing distance, all displays eventually become "retina."
+					</p>
+				</article>
+			</form>
+
+			<figure id="dist">
+				<figcaption>Becomes Retina At Or Over</figcaption>
+				<b style="display: inline-block">31</b>
+				<small style="display: inline">inches<br />(79cm)</small>
+			</figure>
+
+			<figure id="ppi">
+				<b style="display: inline-block">109.47</b>
+				<small style="display: inline">PPI</small>
+
+				<figcaption>Display Density</figcaption>
+			</figure>
+
+			<figure id="aspect">
+				<b style="display: inline-block">12:5</b>
+
+				<figcaption>Aspect Ratio</figcaption>
+			</figure>
+
+			<div id="screen">
+				<div style="left: -480px; right: -480px; bottom: -400px"></div>
+			</div>
+
+			<div style="clear: both"></div>
+		</section>
+	</body>
+</html>
+

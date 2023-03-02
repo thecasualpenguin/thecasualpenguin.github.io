@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stylesheets/banner.css" defer />
+		<link rel="stylesheet" href="stylesheets/stylizedForm.css" defer />
+		<link rel="stylesheet" href="stylesheets/landing.css" defer />
+		<link rel="stylesheet" href="stylesheets/darkToggle.css" defer />
+		<script src="js/landing.js" defer></script>
+		<script src="js/liveChat.js" defer></script>
+
+		<title>Photography Equipment Exchange</title>
+	</head>
+	<body>
+		<div class="theme-switch-wrapper">
+			<label class="theme-switch" id="toggleTheme" for="checkbox">
+				<input type="checkbox" id="checkbox" />
+				<div class="slider round"></div>
+			</label>
+			<em id="toggleLabel">Toggle Your Theme</em>
+		</div>
+
+		<div id="user-control">
+			<div id="login" class="user-action">
+				<a href="./pages/login.php">Log In</a>
+			</div>
+			<div id="signup" class="user-action">
+				<a href="./pages/login.php">Sign up</a>
+			</div>
+		</div>
+
+
+		<div id="user-control-2">
+			<div id="VIP-indicator" class="user-action"> 
+				<a href="./pages/vip.html">VIP Section</a>
+			</div>
+			<div id="signout" class="user-action">
+				<a href="">Sign Out</a>
+			</div>
+		</div>
+		
+		<div id="clock">synchronizing...</div>
+		<ul class="navbar-list" id="vertical-navbar">
+			<!-- <h2>Photography XChange</h2> -->
+			<!-- <li><a href="./pages/index.html"><span class="nav-item">Home</span></a></li> -->
+			<li class="nav-item">
+				<a href="#about-us"><span class="">About Us</span></a>
+			</li>
+			<li class="nav-item">
+				<a href="#contact-us"><span class="">Contact Us</span></a>
+			</li>
+			<li class="nav-item">
+				<a href="./pages/products.html"><span class="">Products</span></a>
+			</li>
+			<li class="nav-item">
+				<a href="#showcase-1"><span class="">Photo of the Month</span></a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#showcase-2"><span class="">Photo of the Year</span></a>
+			</li>
+		</ul>
+
+
+
+		<!-- actual content body -->
+
+		<main>
+			<div style="height: '100vh'" id="bannerContainer" class="">
+				<div
+					class="fixed-section bgimg-1 flexbox-center snapChild"
+					id="section-1"
+				>
+					<video autoplay muted loop id="landingVideo">
+						<source src="videos/landing.mp4" type="video/mp4" />
+					</video>
+					
+					<div class="title center">Cameras for you</div>
+					<div class="down-arrow center">↓</div>
+				</div>
+
+				<div class="fixed-section about-us-container" id="about-us">
+					<h1>About Us</h1>
+					<div class="about-us-container-L2">
+						<div class="about-us-item">
+							<a id="founder-img" href="images/founder.jpg" target="_blank"
+								><img src="images/founder.jpg" alt="founder-ceo"
+							/></a>
+						</div>
+						<section class="about-us-item">
+							<strong>From Felix Gan (CEO, Photography Xchange)</strong>
+							<p>
+								As the founder of photography xchange, I feel obligated to talk
+								about my childhood hardships. There once was a poor family who
+								worked tirelessly to earn enough money to buy a camera. The
+								parents worked long hours at grueling jobs, while the children
+								did their part by taking on odd jobs and chores to contribute to
+								the family's income. Despite the challenges they faced, the
+								family remained determined and focused on their goal.
+								Eventually, after months of hard work and sacrifice, the family
+								was able to save up enough money to purchase the camera they had
+								been dreaming of.
+							</p>
+							<p>
+								But the path to photography should not be obstructed by wealth.
+								Photography Exchange seeks to provide a marketplace where people
+								can exchange high-quality camera gear at affordable prices.
+							</p>
+							<br />
+							<audio controls preload>
+								<source src="./audios/welcome.mp3" type="audio/mpeg" />
+								<source src="./audios/welcome.ogg" type="audio/ogg" />
+								<p>Your browser does not support MP3 or OGG format</p>
+							</audio>
+						</section>
+					</div>
+				</div>
+
+				<div class="fixed-section" id="contact-us">
+					<div class="backdrop"></div>
+					<div class="contact-us-container">
+						<h1>Contact Us</h1>
+						<div class="contact-us-container-L2">
+							<form id="form" class="contact-us-item" action="./pages/confirmation.php" method="POST">
+								<input id="name" name="name" type="text" placeholder="Name" required />
+								<input id="email" name="email" type="email" placeholder="Email" required />
+								<textarea
+									id="message"
+									name="message"
+									type="text"
+									placeholder="Message for Us"
+									required
+								></textarea>
+								<input id="submit" name="inquiry" type="submit" value="Submit" />
+							</form>
+
+							<section class="contact-us-item">
+								<div>
+									<strong> Point of Contact: Mr, Helaku, Hoskin</strong>
+									<ul style="list-style: none">
+										<li>8281 Clear Rabbit Village</li>
+										<li>West Hartland, Ohio, 43128-4755</li>
+										<li>(330) 556-6651</li>
+										<li>hoskinsales@phexchange.com</li>
+									</ul>
+									<strong> Office Hours </strong>
+									<ul style="list-style: none">
+										<li>Monday 8AM - 5PM</li>
+										<li>Tuesday 9AM - 4:35PM</li>
+										<li>Wednesday 10AM - 3:53PM</li>
+										<li>Thursday 5AM - 8:48AM</li>
+										<li>Friday 1PM - 9PM</li>
+										<li>Saturday (closed)</li>
+										<li>Sunday 11AM - 11:25AM</li>
+									</ul>
+									<strong> Official Number: 212-708-9400 </strong>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+				<div class="fixed-section bgimg-2 flexbox-center" id="showcase-1">
+					<p class="placeholder-text" style="color: black; font-size: 1.2rem">
+						<i>A Hike in Norway</i> by Nikolas Angela (Dec 2022)
+					</p>
+				</div>
+				<div class="fixed-section bgimg-3 flexbox-center" id="showcase-2">
+					<p class="placeholder-text" style="font-size: 1.2rem">
+						<i>Garden of Life</i> by Sarah Brightman (Feb 2022)
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

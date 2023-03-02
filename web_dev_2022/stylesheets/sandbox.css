@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the container for the toggle button */
+#dark-mode-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Style the toggle button */
+#dark-mode-toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style the toggle button label */
+#dark-mode-toggle label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 34px;
+  background: #ddd;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Style the toggle button label when it is checked (dark mode is enabled) */
+#dark-mode-toggle input[type="checkbox"]:checked + label {
+  background: rgb(84, 84, 84);
+}
+
+/* Style the toggle button indicator */
+#dark-mode-toggle label:before {
+  content: "L";
+  text-align: center;
+  color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 26px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s;
+}
+
+/* Style the toggle button indicator when it is checked (dark mode is enabled) */
+#dark-mode-toggle input[type="checkbox"]:checked + label:before {
+  content: "D";
+  color: gray;
+  background: rgb(56, 56, 56);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}

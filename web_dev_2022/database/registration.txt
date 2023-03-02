@@ -1,0 +1,7 @@
+{"email":"sdafsad@dfasdf.edu","password":"asfsadf"}
+{"email":"fdas@dfsdf.edu","password":"32423422"}
+{"email":"aksdfl@fsda.edu","password":"fdsfsadfsafsdfasd"}
+{"email":"dsfsdfa@dfsdfsd.edu","password":"sdfsdfasdfas"}
+{"email":"felix@felix.org","password":"password"}
+{"email":"felix@felix.felix","password":"password"}
+{"email":"yeah@yeah.yeah","password":"yeahyeah"}

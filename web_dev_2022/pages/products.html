@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../stylesheets/products.css" />
+		<link rel="stylesheet" href="../stylesheets/darkToggle.css" />
+		<script src="../js/validation.js" defer></script>
+		<script src="../js/products.js" defer></script>
+		<title>Sign Up Page</title>
+	</head>
+	<body>
+		<div class="blocker"></div>
+
+		<a class="back-to-home"
+			href="../index.html"
+			>←Home</a
+		>
+
+		<div class="theme-switch-wrapper">
+			<label class="theme-switch" id="toggleTheme" for="checkbox">
+				<input type="checkbox" id="checkbox" />
+				<div class="slider round"></div>
+			</label>
+			<em id="toggleLabel">Toggle It!</em>
+		</div>
+
+		<h1 class="center">Welcome to the Product Warehouse</h1>
+		<h3 style="text-align: center">
+			The best deals on the internet, curated just for you.
+		</h3>
+
+		<div id="modal2" class="modernmodal">
+			<!-- <div class="decorImg"> -->
+			<img class="decorImg" src="../images/decor.jpg" alt="nice" />
+
+			<div class="modernTextContainer">
+				<span id="close2" class="close">&times;</span>
+				<div class="modernTextContent">
+					<h2>Sign Up!</h2>
+					<p>
+						Subscribe now to get immediate updates from this amazing website.
+					</p>
+					<form id='signup-form' action="./confirmation.php" method="post">
+						<!-- would've been easier just to use build in form controls, but I'm a masochist. -->
+						<input id="nameInput" name="name" type="text" placeholder="John Smith" />
+						<input id="phoneInput" name="phone" type="tel" placeholder="123-456-7890" />
+						<input
+							id="emailInput"
+							name="email"
+							type="text"
+							placeholder="yourEmail@jhu.edu"
+						/>
+						<!-- add fake indicator button -->
+						<input type="text" name="subscribe" value="submit" hidden> 
+						<button id="subscribe" type="submit" value="submit">
+							<div id="subscribe-text">Subscribe</div>
+						</button>
+					</form>
+					<div id="privacy">
+						<a
+							style="color: #999999"
+							href="https://policies.google.com/privacy?hl=en-US"
+							>User Privacy Policy</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<div class="product-grid">
+				<div
+					id="product-template"
+					class="wsk-cp-product flex-item"
+					style="display: none"
+				>
+					<div class="wsk-body">
+						<div class="wsk-cp-img">
+							<img
+								src="https://3.bp.blogspot.com/-eDeTttUjHxI/WVSvmI-552I/AAAAAAAAAKw/0T3LN6jABKMyEkTRUUQMFxpe6PLvtcMMwCPcBGAYYCw/s1600/001-culture-clash-matthew-gianoulis.jpg"
+								alt="Product"
+							/>
+						</div>
+						<div class="wsk-cp-text">
+							<div class="category">
+								<span>Ethnic</span>
+							</div>
+							<div class="title-product">
+								<h3>My face not my heart</h3>
+							</div>
+							<div class="description-prod">
+								<p>
+									Description Product tell me how to change playlist height size
+									like 600px in html5 player. player good work now check this
+									link
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<div class="wcf-left"><span class="price">Rp500.000</span></div>
+						<div class="wcf-right"><a href="#" class="buy-btn">✓</a></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="bottom"></div>
+			<small>Not responsible for any visual damage incurred.</small>
+			<div class="gray-bar">
+				Copyright <span id="copyright">&copy;</span> 2022 The Photography Xchange Company. All Rights Reserved.
+			</div>
+		</footer>
+	</body>
+</html>

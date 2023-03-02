@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stylesheets/sandbox.css" />
+		<title>sandbox</title>
+	</head>
+	<body>
+		<!-- <dialog id="favDialog">
+    <form method="dialog">
+      <p>
+        <label>Favorite animal:
+          <select>
+            <option value="default">Choose…</option>
+            <option>Brine shrimp</option>
+            <option>Red panda</option>
+            <option>Spider monkey</option>
+          </select>
+        </label>
+      </p>
+      <div>
+        <button value="cancel">Cancel</button>
+        <button id="confirmBtn" value="default">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+  <p>
+    <button id="showDialog">Show the dialog</button>
+  </p>
+  <output></output> -->
+
+		<!-- 
+  <div class="ySnapContainer">
+    <div class="snapChild"></div>
+    <div class="snapChild"></div>
+    <div class="snapChild"></div>
+  </div> -->
+		<h1>Welcome to Sandbox</h1>
+
+		<div class="theme-switch-wrapper">
+			<label class="theme-switch" for="checkbox">
+				<input type="checkbox" id="checkbox" />
+				<div class="slider round"></div>
+			</label>
+			<em>Enable Dark Mode!</em>
+		</div>
+
+		<div>
+			<input type="checkbox" class="checkbox" id="checkbox" />
+			<label for="checkbox" class="label">
+				<i class="fas fa-moon"></i>
+				<i class="fas fa-sun"></i>
+				<div class="ball"></div>
+			</label>
+		</div>
+
+		<form
+			id="form"
+			class="contact-us-item"
+			action="./pages/confirmInquiry.php"
+			method="POST"
+		>
+			<input id="name" type="text" placeholder="Name" required />
+			<input id="email" type="email" placeholder="Email" required />
+			<textarea
+				id="message"
+				type="text"
+				placeholder="Message for Us"
+				required
+			></textarea>
+			<input id="submit" type="submit" value="SEND!" />
+		</form>
+
+		<form action="" method="get">
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" /><br /><br />
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname" /><br /><br />
+			<input type="submit" value="Submit" />
+		</form>
+
+		<div class="section" hidden>
+			<div class="section__item">Item 1</div>
+			<div class="section__item">Item 2</div>
+			<div class="section__item">Item 3</div>
+			<div class="section__item">Item 4</div>
+			<div class="section__item">Item 5</div>
+		</div>
+
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {},
+				Tawk_LoadStart = new Date();
+			(function () {
+				var s1 = document.createElement("script"),
+					s0 = document.getElementsByTagName("script")[0];
+				s1.async = true;
+				s1.src = "https://embed.tawk.to/639bbf02daff0e1306dce44f/1gkc648lk";
+				s1.charset = "UTF-8";
+				s1.setAttribute("crossorigin", "*");
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+	</body>
+</html>
