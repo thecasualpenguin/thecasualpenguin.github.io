@@ -13,6 +13,27 @@ body {
 	min-height: 100vh;
 }
 
+
+.fill {
+	display: flex;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+	z-index: 0;
+}
+
 .container {
 	position: absolute;
 	left: 20%;
@@ -23,6 +44,8 @@ body {
 	border-top: 0px;
 	border-bottom: 0px;
 	padding: 3% 6%;
+	background-color: #FFFFFF88;
+	z-index: 1;
 
 }
 
@@ -44,23 +67,31 @@ footer {
 	width: 100%;
 }
 
-.large-project {
-	/* color: #FEC98F; */
-	color: #ffb480;
+.large-project span {
+	background-color: #FEC98F;
+	padding: 5px 15px;
+	color: white;
 }
-.small-project {
-	color: #87ceeb;
+.small-project span {
+	background-color: #87ceeb;
+	padding: 5px 15px;
+	color: white;
 }
-.wip {
-	color: #9fcc99;
+
+.wip span {
+	background-color: #9fcc99;
+	padding: 5px 15px;
+	color: white;
 }
 
 /* new class just for hover effect */
 .item {
 	padding: 20px 0px;
 	margin: 0px;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	transition: all 0.15s ease;
+	font-family: monospace;
+	font-weight: 400;
 }
 
 .item:hover {
